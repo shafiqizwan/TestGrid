@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="TestGrid.Page1">
+  
+<Grid RowSpacing="2" ColumnSpacing="10">
+  <Grid.RowDefinitions>
+      <RowDefinition Height="3*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="5*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+  
+  
+  
+  <!--First Row-->
+  <Label Text="R0C0 - Row Height 3*" BackgroundColor="Red" Grid.Row="0" Grid.Column="0" />
+  <Label Text="ROC1" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1" />
+  <Label Text="ROC2" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="2" />
+  <Label Text="ROC3" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="3" />
+  <Label Text="ROC4" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="4" />
+  <Label Text="ROC5" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="5" />
+  <!--End of First Row-->
+  
+  <!--Second Row-->
+  <Label Text="R1C0" BackgroundColor="Navy" Grid.Row="1" Grid.Column="0" />
+  <Label Text="R1C1" BackgroundColor="Maroon" Grid.Row="1" Grid.Column="1" />
+  <Label Text="R1C2" BackgroundColor="Maroon" Grid.Row="1" Grid.Column="2" />
+  <Label Text="R1C3" BackgroundColor="Maroon" Grid.Row="1" Grid.Column="3" />
+  <Label Text="R1C4" BackgroundColor="Maroon" Grid.Row="1" Grid.Column="4" />
+  <Label Text="R1C5" BackgroundColor="Maroon" Grid.Row="1" Grid.Column="5" />
+  <!--End of Second Row-->
+  
+   <!--Third Row-->
+  <Label Text="R2C0" BackgroundColor="Aqua" Grid.Row="2" Grid.Column="0" />
+  <Label Text="R2C1" BackgroundColor="Silver" Grid.Row="2" Grid.Column="1" />
+  <Label Text="R2C2" BackgroundColor="Silver" Grid.Row="2" Grid.Column="2" />
+  <Label Text="R2C3" BackgroundColor="Silver" Grid.Row="2" Grid.Column="3" />
+  <Label Text="R2C4" BackgroundColor="Silver" Grid.Row="2" Grid.Column="4" />
+  <Label Text="R2C5" BackgroundColor="Silver" Grid.Row="2" Grid.Column="5" />
+  <!--End of Third Row-->
+  
+   <!--Fourth Row-->
+  <Label Text="R3C0 - Row Height 5*" BackgroundColor="Gray" Grid.Row="3" Grid.Column="0" />
+  <Label Text="R3C1" BackgroundColor="Fuchsia" Grid.Row="3" Grid.Column="1" />
+  <Label Text="R3C2" BackgroundColor="Fuchsia" Grid.Row="3" Grid.Column="2" />
+  <Label Text="R3C3" BackgroundColor="Fuchsia" Grid.Row="3" Grid.Column="3" />
+  <Label Text="R3C4" BackgroundColor="Fuchsia" Grid.Row="3" Grid.Column="4" />
+  <Label Text="R3C5" BackgroundColor="Fuchsia" Grid.Row="3" Grid.Column="5" />
+  <!--End of Fourth Row-->
+  
+  
+  <controls:CircleImage
+      Grid.ColumnSpan="6"
+      Grid.RowSpan="2"
+      Source="me"
+      BorderColor="#00BCD2"
+      BorderThickness="2"
+      HorizontalOptions="Center"
+      VerticalOptions="Center"/>
+  
+  <!--<Label Text="Bottom Left" BackgroundColor="Maroon" Grid.Row="1" Grid.Column="0" />
+  <Label Text="Bottom Right" BackgroundColor="Navy" Grid.Row="1" Grid.Column="1" />-->
+</Grid>
+
+</ContentPage>
